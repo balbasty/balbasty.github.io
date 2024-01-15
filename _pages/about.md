@@ -2,25 +2,28 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: >
+  Instructor, <a href="https://www.martinos.org">A.A. Martinos Center for Biomedical Imaging</a>
+  Massachusetts General Hospital, Harvard Medical School
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: yael_picture.png
+  image_circular: true # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>`ybalbastre` _at_ `mgh.harvard.edu`</p>
+    <p><a href="https://lcn.martinos.org">Laboratories for Computational Neuroimaging</a></p>
+    <p><a href="https://www.martinos.org">A.A. Martinos Center for Biomedical Imaging</a></p>
+    <p>Massachusetts General Hospital</p>
+    <p>149 Thirteenth Street</p>
+    <p>Charlestown, Massachusetts 02129</p>
 
 news: true # includes a list of news items
-latest_posts: true # includes a list of the newest posts
+latest_posts: false # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I work on various aspects of medical image computing, with a focus on neuroimaging. I am particularly interested in generative probabilistic models, and how they can be integrated with machine learning techniques. I have worked, among other things, on Bayesian shape modelling, image segmentation and registration, and quantitative MRI. Recently, I have focused on multimodal image registration and vasculature segmentation, with the aim of building cellular-resolution atlases of the human brain.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I was a postdoctoral fellow with [Bruce Fischl](https://www.martinos.org/investigator/bruce-fischl/) at the Massachusetts General Hospital and Harvard Medical School, and with [John Ashburner]([https://www.fil.ion.ucl.ac.uk/~john/](https://www.fil.ion.ucl.ac.uk/team/computational-anatomy-team/) and [Martina Callaghan](https://www.fil.ion.ucl.ac.uk/team/physics-team/) at University College London. I completed my PhD at the French Alternative Energies and Atomic Energy Commission, in the MIRCen and NeuroSpin laboratories, advised by [Thierry Delzescaux](https://jacob.cea.fr/drf/ifrancoisjacob/english/Pages/Departments/MIRCen/ResearchThemes/brain-aging.aspx) and [Jean-François Mangin](https://joliot.cea.fr/drf/joliot/en/Pages/research_entities/NeuroSpin/unati.aspx).
