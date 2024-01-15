@@ -1,12 +1,20 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - balbasty
+  - neuroscales
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - balbasty/nitorch
+  - balbasty/cornucopia
+  - balbasty/jitfields
+  - balbasty/torch-interpol
+  - balbasty/torch-distmap
+  - balbasty/torch-diffeo
+  - balbasty/torch-relay
+  - balbasty/torch-b0-synth
+  - balbasty/variational_staple 
+  - balbasty/optimal_affine
+  - balbasty/multi-bias 
+  - balbasty/super-resolution
+  - balbasty/gPCA
+  - neuroscales/biccn-broca-I46
+  - neuroscales/mbf-io
