@@ -1,34 +1,31 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"ashburner":
+  - firstname: ["John", "J."]
+    url: https://www.fil.ion.ucl.ac.uk/team/computational-anatomy-team/
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"brudfors":
+  - firstname: ["Mikael", "M."]
+    url: https://github.com/brudfors
+    
+"callaghan":
+  - firstname: ["Martina", "Martina F.", "M. F.", "M."]
+    url: https://www.fil.ion.ucl.ac.uk/team/physics-team/
+    
+"delzescaux":
+  - firstname: ["Thierry", "T."]
+    url: https://jacob.cea.fr/drf/ifrancoisjacob/english/Pages/Departments/MIRCen/ResearchThemes/brain-aging.aspx
+    
+"fischl":
+  - firstname: ["Bruce", "B."]
+    url: https://www.martinos.org/investigator/bruce-fischl/
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"iglesias":
+  - firstname: ["Juan", "Juan Eugenio", "Eugenio", "J. Eugenio", "J. E.", "J."]
+    url: https://lemon.martinos.org/
+    
+"mangin":
+  - firstname: ["Jean-Francois", "Jean-François", "J.-F.", "J.", "J. F."]
+    url: https://joliot.cea.fr/drf/joliot/en/Pages/research_entities/NeuroSpin/unati.aspx
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
-
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
-
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
-
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
-
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"young":
+  - firstname: ["Sean", "Sean I.", "S.", "S. I."]
+    url: https://lcn.martinos.org/people/syoung/
