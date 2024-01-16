@@ -213,8 +213,8 @@
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
       {% endif %}
-      {% assign highlights = entry.highlight | split "|" %}
-      {% assign highlight_links = entry.highlight_link | split "|" %}
+      {% assign highlights = entry.highlight | split: "|" %}
+      {% assign highlight_links = entry.highlight_link | split: "|" %}
       {% for highlight in highlights %}
         {% if highlight %}
           {% if highlight_links[forloop.index0] %}
