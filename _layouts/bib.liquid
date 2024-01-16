@@ -82,25 +82,23 @@
           {% if forloop.first == false %},&nbsp;{% endif %}
           {% if forloop.last and author_array_limit == author_array_size %}and&nbsp;{% endif %}
         {% endif %}
-        {% if author_is_self %}
+        {%- if author_is_self -%}
           <em>
             {{- author.first }}
             {{ author.last -}}
           </em>
-        {% else %}
-          {% if coauthor_url %}
-            <a href="{{coauthor_url}}">
-              {{- author.first }}
-              {{ author.last -}}
-            </a>
-          {% else %}
+        {%- elsif coauthor_url -%}
+          <a href="{{coauthor_url}}">
             {{- author.first }}
             {{ author.last -}}
-          {% endif %}
-        {% endif %}
-        {% if annotation %}
+          </a>
+        {%- else -%}
+          {{- author.first }}
+          {{ author.last -}}
+        {%- endif -%}
+        {%- if annotation -%}
           <sup>{{- annotation -}}</sup>
-        {% endif %}
+        {%- endif -%}
       {% endfor %}
       {% assign more_authors = author_array_size | minus: author_array_limit %}
 
@@ -111,13 +109,13 @@
         {% endif %}
         {% assign more_authors_show = '' %}
         {% for author in entry.author_array offset: author_array_limit %}
-          {% if forloop.index0 <= annotations_size %}
-            {% assign annotation = annotations[forloop.index0] %}
+          {% assign index = author_array_limit + forloop.index0 %}
+          {% assign annotation = nil %}
+          {% if index <= annotations_size %}
+            {% assign annotation = annotations[index] %}
             {% if annotation == blank %}
               {% assign annotation = nil %}
             {% endif %}
-          {% else %}
-            {% assign annotation = nil %}
           {% endif %}
           {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last %}
           {% if annotation %}
