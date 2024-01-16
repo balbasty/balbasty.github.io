@@ -85,18 +85,28 @@
         {% endif %}
         {% if author_is_self %}
           <em>
-        {% elsif coauthor_url %}
-          <a href="{{coauthor_url}}">
-        {% endif }
-        {{- author.first }}
-        {{ author.last -}}
-        {% if annotation %}
-          <sup>{{- annotation -}}</sup>
-        {% endif %}
-        {% if author_is_self %}
+            {{- author.first }}
+            {{ author.last -}}
+            {% if annotation %}
+              <sup>{{- annotation -}}</sup>
+            {% endif %}
           </em>
-        {% elsif coauthor_url %}
-          </a>
+        {% else %}
+          {%if coauthor_url %}
+            <a href="{{coauthor_url}}">
+              {{- author.first }}
+              {{ author.last -}}
+              {% if annotation %}
+                <sup>{{- annotation -}}</sup>
+              {% endif %}
+            </a>
+          {% else %}
+            {{- author.first }}
+            {{ author.last -}}
+            {% if annotation %}
+              <sup>{{- annotation -}}</sup>
+            {% endif %}
+          {% endif %}
         {% endif }
       {% endfor %}
       {% assign more_authors = author_array_size | minus: author_array_limit %}
