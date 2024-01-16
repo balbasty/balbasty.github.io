@@ -88,11 +88,11 @@
         {% elsif coauthor_url %}
           <a href="{{coauthor_url}}">
         {% endif }
-            {{- author.first }}
-            {{ author.last -}}
-            {% if annotation %}
-              <sup>{{- annotation -}}</sup>
-            {% endif %}
+        {{- author.first }}
+        {{ author.last -}}
+        {% if annotation %}
+          <sup>{{- annotation -}}</sup>
+        {% endif %}
         {% if author_is_self %}
           </em>
         {% elsif coauthor_url %}
