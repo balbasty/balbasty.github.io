@@ -109,7 +109,7 @@
         {% endif %}
         {% assign more_authors_show = '' %}
         {% for author in entry.author_array offset: author_array_limit %}
-          {% assign index = author_array_limit + forloop.index0 %}
+          {% assign index = author_array_limit | plus: forloop.index0 %}
           {% assign annotation = nil %}
           {% if index <= annotations_size %}
             {% assign annotation = annotations[index] %}
