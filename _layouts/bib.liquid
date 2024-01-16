@@ -85,20 +85,19 @@
         {% endif %}
         {% if author_is_self %}
           <em>
+        {% elsif coauthor_url %}
+          <a href="{{coauthor_url}}">
+        {% endif }
             {{- author.first }}
-            {{ author.last -}}{% if annotation %}<sup>{{ annotation }}</sup>{% endif %}
+            {{ author.last -}}
+            {% if annotation %}
+              <sup>{{- annotation -}}</sup>
+            {% endif %}
+        {% if author_is_self %}
           </em>
-        {% else %}
-          {% if coauthor_url %}
-            <a href="{{coauthor_url}}">
-              {{- author.first }}
-              {{ author.last -}}{% if annotation %}<sup>{{ annotation }}</sup>{% endif %}
-            </a>
-          {% else %}
-            {{ author.first }}
-            {{ author.last }}{% if annotation %}<sup>{{ annotation }}</sup>{% endif %}
-          {% endif %}
-        {% endif %}
+        {% elsif coauthor_url %}
+          </a>
+        {% endif }
       {% endfor %}
       {% assign more_authors = author_array_size | minus: author_array_limit %}
 
@@ -129,7 +128,7 @@
               var more_authors_text = element.text() == '{{more_authors_hide}}' ? '{{more_authors_show}}' : '{{more_authors_hide}}';
               var cursorPosition = 0;
               var textAdder = setInterval(function(){
-                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                element.html(more_authors_text.substring(0, cursorPosition + 1));
                 if (++cursorPosition == more_authors_text.length){
                   clearInterval(textAdder);
                 }
