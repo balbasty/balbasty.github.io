@@ -2,96 +2,74 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Yaël Balbastre
     - name: Date of Birth
-      value: 14th March 1879
+      value: 29th March 1990
     - name: Languages
-      value: English, German
+      value: English, French
 
 - title: Education
   type: time_table
   contents:
     - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+      field: Medical physics
+      institution: Paris-Saclay University, Paris, France
+      year: 2016
+      thesis: Morphometry Analysis Tools for the Macaque Brain : Development and Validation
+      advisors: Thierry Delzescaux, Jean-François Mangin
+    - title: D. Eng.
+      institution: ENSIMAG, INP Grenoble, Grenoble, France
+      year: 2013
+      major: Computer Science, Applied Mathematics
+      specialization: Mathematical Modelling, Vision, Graphics and Simulation
+      option: Bioinformatics
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
+    - title: Instructor in Radiology
+      institution: Harvard Medical School, Boston, MA, US
+      year: 2023 - 
+      
+    - title: Investigator
+      institution: Massachusetts General Hospital, Boston, MA, US
+      year: 2023 -
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
+    - title: Postdoctoral Researcher
+      institution: Massachusetts General Hospital, Boston, MA, US
+      year: 2020 - 2023
+      advisor: Bruce Fischl
 
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Postdoctoral Researcher
+      institution: University College London, London, UK
+      year: 2017 - 2020
+      advisors: John Ashburner, Martina F Callaghan
+      
+    - title: PhD Student
+      institution: French Alternative Energies and Atomic Energy Commission, Fontenay-aux-Roses, France
+      year: 2013 - 2026
+      advisors: Thierry Delzescaux, Jean-François Mangin
 
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: <a href="https://github.com/balbasty/cornucopia">nitorch</a>
+      year: 2023-now
+      description: Augmentation layers for medical imaging applications
+    - title: <a href="https://github.com/balbasty/nitorch">nitorch</a>
+      year: 2020-now
+      description: Neuroimaging in PyTorch
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2023
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Royal Society's Newton International Fellowship
+    - year: 2021
       items:
-        - Max Planck Medal
+        - MICCAI-MedIA Best Paper Award
+    - year: 2020
+      items:
+        - MIUA Best Paper Award
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
