@@ -1,31 +1,39 @@
 "ashburner":
-  - firstname: ["John", "J."]
+  - firstname: ["John", "J.", "J"]
     url: https://www.fil.ion.ucl.ac.uk/team/computational-anatomy-team/
 
 "brudfors":
-  - firstname: ["Mikael", "M."]
+  - firstname: ["Mikael", "M.", "M"]
     url: https://github.com/brudfors
     
 "callaghan":
-  - firstname: ["Martina", "Martina F.", "M. F.", "M."]
+  - firstname: ["Martina", "Martina F.", "M. F.", "M.F.", "M.", "MF", "M F", "M"]
     url: https://www.fil.ion.ucl.ac.uk/team/physics-team/
     
+"dalca":
+  - firstname: ["Adrian", "Adrian D.", "Adrian D", "A", "A D", "AD", "A.", "A. D.", "A.D."]
+    url: https://www.mit.edu/~adalca/
+    
 "delzescaux":
-  - firstname: ["Thierry", "T."]
+  - firstname: ["Thierry", "T.", "T"]
     url: https://jacob.cea.fr/drf/ifrancoisjacob/english/Pages/Departments/MIRCen/ResearchThemes/brain-aging.aspx
     
 "fischl":
-  - firstname: ["Bruce", "B."]
+  - firstname: ["Bruce", "B.", "B"]
     url: https://www.martinos.org/investigator/bruce-fischl/
 
 "iglesias":
-  - firstname: ["Juan", "Juan Eugenio", "Eugenio", "J. Eugenio", "J. E.", "J."]
+  - firstname: ["Juan", "Juan Eugenio", "Eugenio", "J. Eugenio", "Juan E.", "Juan E", "J Eugenio", "J. E.", "J.", "J", "J E", "JE"]
+    url: https://lemon.martinos.org/
+    
+"iglesias-gonzalez":
+  - firstname: ["Juan", "Juan Eugenio", "Eugenio", "J. Eugenio", "Juan E.", "Juan E", "J Eugenio", "J. E.", "J.", "J", "J E", "JE"]
     url: https://lemon.martinos.org/
     
 "mangin":
-  - firstname: ["Jean-Francois", "Jean-François", "J.-F.", "J.", "J. F."]
+  - firstname: ["Jean-Francois", "Jean-François", "J.-F.", "J.", "J. F.", "J", "J-F", "JF", "J F"]
     url: https://joliot.cea.fr/drf/joliot/en/Pages/research_entities/NeuroSpin/unati.aspx
 
 "young":
-  - firstname: ["Sean", "Sean I.", "S.", "S. I."]
+  - firstname: ["Sean", "Sean I.", "S.", "S. I.", "Sean I", "S", "SI", "S I"]
     url: https://lcn.martinos.org/people/syoung/
