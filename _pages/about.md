@@ -3,20 +3,18 @@ layout: about
 title: about
 permalink: /
 subtitle: >
-  Instructor, <a href="https://www.martinos.org">A.A. Martinos Center for Biomedical Imaging</a>
-  Massachusetts General Hospital, Harvard Medical School
+  Instructor at Massachusetts General Hospital & Harvard Medical School
 
 profile:
-  align: right
+  align: left
   image: yael_picture.png
-  image_circular: true # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   more_info: >
-    <p>`ybalbastre` _at_ `mgh.harvard.edu`</p>
-    <p><a href="https://lcn.martinos.org">Laboratories for Computational Neuroimaging</a></p>
-    <p><a href="https://www.martinos.org">A.A. Martinos Center for Biomedical Imaging</a></p>
-    <p>Massachusetts General Hospital</p>
+    <p>ybalbastre <i>at</i> mgh.harvard.edu</p>
+    <p><a href="https://lcn.martinos.org">LCN</a>, 
+    <a href="https://www.martinos.org">A.A. Martinos Center for Biomedical Imaging</a></p>
     <p>149 Thirteenth Street</p>
-    <p>Charlestown, Massachusetts 02129</p>
+    <p>Charlestown, MA</p>
 
 news: true # includes a list of news items
 latest_posts: false # includes a list of the newest posts
