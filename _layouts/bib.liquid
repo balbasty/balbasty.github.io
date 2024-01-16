@@ -44,6 +44,8 @@
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
+      {% assign annotations = entry.author+an | split: ";" %}
+      {% assign annotations_size = annotations | size %}
 
       {% assign author_array_limit = author_array_size %}
       {% if site.max_author_limit and author_array_size > site.max_author_limit %}
@@ -51,6 +53,11 @@
       {% endif %}
 
       {% for author in entry.author_array limit: author_array_limit %}
+        {% if forloop.index0 <= annotations_size %}
+          {% assign annotation = annotations[forloop.index0] %}
+        {% else %}
+          {% assign annotation = "" %}
+        {% endif %}
         {% assign author_is_self = false %}
         {% assign author_last_name = author.last | remove: '¶' | remove: '&' | remove: '*' | remove: '†' | remove: '^' %}
         {% if site.scholar.last_name contains author_last_name %}
@@ -77,16 +84,25 @@
           <em>
             {{- author.first }}
             {{ author.last -}}
+            {% if annotation %}
+              <sup>{{ annotation }}</sup>
+            {% endif %}
           </em>
         {% else %}
           {% if coauthor_url %}
             <a href="{{coauthor_url}}">
               {{- author.first }}
               {{ author.last -}}
+              {% if annotation %}
+                <sup>{{ annotation }}</sup>
+              {% endif %}
             </a>
           {% else %}
             {{ author.first }}
             {{ author.last }}
+            {% if annotation %}
+              <sup>{{ annotation }}</sup>
+            {% endif %}
           {% endif %}
         {% endif %}
       {% endfor %}
@@ -99,7 +115,15 @@
         {% endif %}
         {% assign more_authors_show = '' %}
         {% for author in entry.author_array offset: author_array_limit %}
+          {% if forloop.index0 <= annotations_size %}
+            {% assign annotation = annotations[forloop.index0] %}
+          {% else %}
+            {% assign annotation = "" %}
+          {% endif %}
           {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last %}
+          {% if annotation %}
+            {% assign more_authors_show = more_authors_show | append: '<sup>' | append: annotation | append: '</sup>' %}
+          {% endif %}
           {% unless forloop.last %}
             {% assign more_authors_show = more_authors_show | append: ', ' %}
           {% endunless %}
