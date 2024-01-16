@@ -91,8 +91,7 @@
               <sup>{{- annotation -}}</sup>
             {% endif %}
           </em>
-        {% else %}
-          {%if coauthor_url %}
+        {% elsif coauthor_url %}
             <a href="{{coauthor_url}}">
               {{- author.first }}
               {{ author.last -}}
@@ -100,12 +99,11 @@
                 <sup>{{- annotation -}}</sup>
               {% endif %}
             </a>
-          {% else %}
-            {{- author.first }}
-            {{ author.last -}}
-            {% if annotation %}
-              <sup>{{- annotation -}}</sup>
-            {% endif %}
+        {% else %}
+          {{- author.first }}
+          {{ author.last -}}
+          {% if annotation %}
+            <sup>{{- annotation -}}</sup>
           {% endif %}
         {% endif }
       {% endfor %}
@@ -120,10 +118,16 @@
         {% for author in entry.author_array offset: author_array_limit %}
           {% if forloop.index0 <= annotations_size %}
             {% assign annotation = annotations[forloop.index0] %}
+            {% if annotation == blank %}
+              {% assign annotation = nil %}
+            {% endif %}
           {% else %}
             {% assign annotation = nil %}
           {% endif %}
           {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last %}
+          {% if annotation %}
+            {% assign more_authors_show = more_authors_show | append: '<sup>' | append: annotation | append: '</sup>' %}
+          {% endif %}
           {% unless forloop.last %}
             {% assign more_authors_show = more_authors_show | append: ', ' %}
           {% endunless %}
