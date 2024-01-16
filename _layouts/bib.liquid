@@ -213,9 +213,17 @@
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
       {% endif %}
-      {% if entry.highlight %}
-        <a class="btn btn-sm z-depth-0" style="color: #f29105; border-color: #f29105">{{ entry.highlight }}</a>
-      {% endif %}
+      {% assign highlights = entry.highlight | split "|" %}
+      {% assign highlight_links = entry.highlight_link | split "|" %}
+      {% for highlight in highlights %}
+        {% if highlight %}
+          {% if highlight_links[forloop.index0] %}
+            <a href="{{ highlight_links[forloop.index0] }}" class="btn btn-sm z-depth-0" style="color: #f29105; border-color: #f29105">{{ highlight }}</a>
+          {% else %}
+            <a class="btn btn-sm z-depth-0" style="color: #f29105; border-color: #f29105">{{ highlight }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
     </div>
     {% if site.enable_publication_badges %}
       {% assign entry_has_altmetric_badge = entry.altmetric or entry.doi or  entry.eprint or entry.pmid or entry.isbn %}
