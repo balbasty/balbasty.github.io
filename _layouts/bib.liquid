@@ -56,7 +56,7 @@
         {% if forloop.index0 <= annotations_size %}
           {% assign annotation = annotations[forloop.index0] %}
         {% else %}
-          {% assign annotation = "" %}
+          {% assign annotation = nil %}
         {% endif %}
         {% assign author_is_self = false %}
         {% assign author_last_name = author.last | remove: '¶' | remove: '&' | remove: '*' | remove: '†' | remove: '^' %}
@@ -118,7 +118,7 @@
           {% if forloop.index0 <= annotations_size %}
             {% assign annotation = annotations[forloop.index0] %}
           {% else %}
-            {% assign annotation = "" %}
+            {% assign annotation = nil %}
           {% endif %}
           {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last %}
           {% if annotation %}
