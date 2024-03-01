@@ -11,11 +11,10 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>y.balbastre <i>at</i> ucl.ac.uk</p>
-    <p><a href="https://www.ucl.ac.uk/pals/research/experimental-psychology">Department of Experimental Psychology</a></p>,
-    <p><a href="https://www.ucl.ac.uk/pals/ucl-division-psychology-and-language-sciences">Division of Psychology and Language Sciences</a>, 
+    <p><a href="https://www.ucl.ac.uk/pals/research/experimental-psychology">Department of Experimental Psychology</a>, 
+    <a href="https://www.ucl.ac.uk/pals/ucl-division-psychology-and-language-sciences">Division of Psychology and Language Sciences</a>, 
     <a href="https://www.ucl.ac.uk">University College London</a></p>
-    <p>26 Bedford Way</p>
-    <p>London WC1H 0AP, UK</p>
+    <p>26 Bedford Way, London WC1H 0AP</p>
 
 news: true # includes a list of news items
 latest_posts: false # includes a list of the newest posts
