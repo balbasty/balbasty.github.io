@@ -22,14 +22,21 @@
   },
   "work": [
     {
+      "name": "University College London, London, UK",
+      "position": "Newton International Fellow",
+      "startDate": "2024"
+    },
+    {
       "name": "Harvard Medical School, Boston, MA, US",
       "position": "Instructor in Radiology",
-      "startDate": "2023"
+      "startDate": "2023",
+      "endDate": "2024"
     },
     {
       "name": "Massachusetts General Hospital, Boston, MA, US",
       "position": "Investigator",
-      "startDate": "2023"
+      "startDate": "2023",
+      "endDate": "2024"
     },
     {
       "name": "Massachusetts General Hospital, Boston, MA, US",
@@ -79,6 +86,13 @@
     }
   ],
   "awards": [
+    {
+      "title": "Newton International Fellowship",
+      "date": "2023",
+      "awarder": "Royal Society",
+      "url": "https://royalsociety.org/news/2023/10/early-career-researchers-funding-2023/",
+      "summary": "The Newton International Fellowship programme provides support for outstanding early career researchers to make a first step towards developing an independent research career through gaining experience across international borders."
+    },
     {
       "title": "MICCAI MEDIA Best Paper Award",
       "date": "2021",
