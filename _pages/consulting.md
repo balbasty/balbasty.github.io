@@ -1,8 +1,7 @@
 ---
 layout: about
 title: consulting
-permalink: /consulting
-description: Private consultancy.
+permalink: /consulting/
 nav: false
 nav_order: 6
 subtitle: >
