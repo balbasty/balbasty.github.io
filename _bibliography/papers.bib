@@ -1,6 +1,22 @@
 ---
 ---
 
+@article{hu2024learn2synth,
+  abbr={arXiv},
+  title={Learn2Synth: Learning Optimal Data Synthesis Using Hypergradients}, 
+  author={Xiaoling Hu and Oula Puonti and Juan Eugenio Iglesias and Bruce Fischl and Yael Balbastre},
+  author_annot = {;;;‡;‡},
+  year={2024},
+  eprint={2411.16719},
+  arxiv={2411.16719},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2411.16719},
+  pdf={https://arxiv.org/pdf/2411.16719.pdf},
+  code={https://github.com/HuXiaoling/Learn2Synth},
+  abstract={Domain randomization through synthesis is a powerful strategy to train networks that are unbiased with respect to the domain of the input images. Randomization allows networks to see a virtually infinite range of intensities and artifacts during training, thereby minimizing overfitting to appearance and maximizing generalization to unseen data. While powerful, this approach relies on the accurate tuning of a large set of hyper-parameters governing the probabilistic distribution of the synthesized images. Instead of manually tuning these parameters, we introduce Learn2Synth, a novel procedure in which synthesis parameters are learned using a small set of real labeled data. Unlike methods that impose constraints to align synthetic data with real data (e.g., contrastive or adversarial techniques), which risk misaligning the image and its label map, we tune an augmentation engine such that a segmentation network trained on synthetic data has optimal accuracy when applied to real data. This approach allows the training procedure to benefit from real labeled examples, without ever using these real examples to train the segmentation network, which avoids biasing the network towards the properties of the training set. Specifically, we develop both parametric and nonparametric strategies to augment the synthetic images, enhancing the segmentation network's performance. Experimental results on both synthetic and real-world datasets demonstrate the effectiveness of this learning strategy.}
+}
+
 @article{gopinath2024synthetic,
     abbr={Imag.Neurosci.},
     author = {Gopinath, Karthik and Hoopes, Andrew and Alexander, Daniel C. and Arnold, Steven E. and Balbastre, Yael and Billot, Benjamin and Casamitjana, Adrià and Cheng, You and Chua, Russ Yue Zhi and Edlow, Brian L. and Fischl, Bruce and Gazula, Harshvardhan and Hoffmann, Malte and Keene, C. Dirk and Kim, Seunghoi and Kimberly, W. Taylor and Laguna, Sonia and Larson, Kathleen E. and Van Leemput, Koen and Puonti, Oula and Rodrigues, Livia M. and Rosen, Matthew S. and Tregidgo, Henry F. J. and Varadarajan, Divya and Young, Sean I. and Dalca, Adrian V. and Iglesias, Juan Eugenio},
@@ -45,7 +61,9 @@
   year={2024},
   doi={10.48550/arXiv.2407.01419},
   url={https://arxiv.org/abs/2407.01419},
-  pdf={https://arxiv.org/abs/2407.01419.pdf},
+  pdf={https://arxiv.org/pdf/2407.01419.pdf},
+  code={https://github.com/EtienneChollet/oct_vesselseg},
+  data={https://dandiarchive.org/dandiset/000722},
   arxiv={2407.01419},
   abstract={Microvascular anatomy is known to be involved in various neurological disorders. However, understanding these disorders is hindered by the lack of imaging modalities capable of capturing the comprehensive three-dimensional vascular network structure at microscopic resolution. With a lateral resolution of <=20 {\textmu}m and ability to reconstruct large tissue blocks up to tens of cubic centimeters, serial-section optical coherence tomography (sOCT) is well suited for this task. This method uses intrinsic optical properties to visualize the vessels and therefore does not possess a specific contrast, which complicates the extraction of accurate vascular models. The performance of traditional vessel segmentation methods is heavily degraded in the presence of substantial noise and imaging artifacts and is sensitive to domain shifts, while convolutional neural networks (CNNs) require extensive labeled data and are also sensitive the precise intensity characteristics of the data that they are trained on. Building on the emerging field of synthesis-based training, this study demonstrates a synthesis engine for neurovascular segmentation in sOCT images. Characterized by minimal priors and high variance sampling, our highly generalizable method tested on five distinct sOCT acquisitions eliminates the need for manual annotations while attaining human-level precision. Our approach comprises two phases: label synthesis and label-to-image transformation. We demonstrate the efficacy of the former by comparing it to several more realistic sets of training labels, and the latter by an ablation study of synthetic noise and artifact models.}
 }
