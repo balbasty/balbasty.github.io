@@ -6,4 +6,4 @@ related_posts: false
 ---
 
 In a new preprint, Xiaoling shows how to learn a synthesis strategy that is optimal for a given task: 
-["Learn2Synth: Learning Optimal Data Synthesis Using Hypergradients"]([https://arxiv.org/abs/2407.01419](http://arxiv.org/abs/2411.16719)).
+["Learn2Synth: Learning Optimal Data Synthesis Using Hypergradients"](http://arxiv.org/abs/2411.16719).
