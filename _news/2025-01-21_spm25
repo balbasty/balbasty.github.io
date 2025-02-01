@@ -1,0 +1,11 @@
+---
+layout: post
+date: 2025-01-21
+inline: true
+related_posts: false
+---
+
+A new major version of the [Statistical Parametric Mapping](https://github.com/spm/spm), SPM25, was released. 
+This is the first major version of SPM since SPM12 (which, counter-intuitively, was released in 2014). 
+It comes with a [preprint](https://arxiv.org/abs/2501.12081) and includes, among other novelties, 
+the [Multi-Brain (MB)](https://arxiv.org/abs/2006.02338) and [Factorisation-Based Image Labelling (FIL)](https://arxiv.org/abs/2111.10326) toolboxes.
