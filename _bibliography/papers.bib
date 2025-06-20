@@ -1,6 +1,18 @@
 ---
 ---
 
+@inproceedings{wang2025schwarz,
+  abbr={ICML},
+  author={Yu Wang and S. Mazdak Abulnaga and Yael Balbastre and Bruce Fischl},
+  title={Schwarz–Schur Involution: Lightspeed Differentiable Sparse Linear Solvers},
+  booktitle={ICML},
+  year={2025},
+  abstract={Sparse linear solvers are fundamental to science and engineering, applied in partial differential equations (PDEs), scientific computing, computer vision, and beyond. Indirect solvers possess characteristics that make them undesirable as stable differentiable modules; existing direct solvers, though reliable, are too expensive to be adopted in neural architectures. We substantially accelerate direct sparse solvers or generalized deconvolution by up to 3 orders-of-magnitude faster, violating common assumptions that direct solvers are too slow. We 
+  condense'' a sparse Laplacian matrix into a dense tensor, a compact data structure that batch-wise stores the Dirichlet-to-Neumann matrices, reducing the sparse solving to recursively merging pairs of dense matrices that are much smaller. The batched small dense systems are sliced and inverted in parallel to take advantage of dense GPU BLAS kernels, highly optimized in the era of deep learning. Our method is efficient, qualified as a strong zero-shot baseline for AI-based PDE solving and a reliable differentiable module integrable into machine learning pipelines.},
+  url={https://openreview.net/pdf?id=RKbanvzycr},
+  pdf={https://openreview.net/pdf?id=RKbanvzycr}
+}
+
 @article{lopez2025distorting,
   abbr={bioRxiv},
   title={Distorting anatomy to test MEG models and metrics},
