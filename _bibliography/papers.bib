@@ -15,6 +15,24 @@
   pdf={https://arxiv.org/pdf/2508.12942}
 }
 
+@inproceedings{hu2024learn2synth,
+  abbr={ICCV},
+  title={Learn2Synth: Learning Optimal Data Synthesis Using Hypergradients for Brain Image Segmentation}, 
+  author={Xiaoling Hu and  Xiangrui Zeng and Oula Puonti and Juan Eugenio Iglesias and Bruce Fischl and Yael Balbastre},
+  author_annot = {;;;;‡;‡},
+  journal={ICCV},
+  year={2024},
+  eprint={2411.16719},
+  arxiv={2411.16719},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  doi={https://doi.org/10.48550/arXiv.2411.16719},
+  url={https://arxiv.org/abs/2411.16719},
+  pdf={https://arxiv.org/pdf/2411.16719.pdf},
+  code={https://github.com/HuXiaoling/Learn2Synth},
+  abstract={Domain randomization through synthesis is a powerful strategy to train networks that are unbiased with respect to the domain of the input images. Randomization allows networks to see a virtually infinite range of intensities and artifacts during training, thereby minimizing overfitting to appearance and maximizing generalization to unseen data. While powerful, this approach relies on the accurate tuning of a large set of hyper-parameters governing the probabilistic distribution of the synthesized images. Instead of manually tuning these parameters, we introduce Learn2Synth, a novel procedure in which synthesis parameters are learned using a small set of real labeled data. Unlike methods that impose constraints to align synthetic data with real data (e.g., contrastive or adversarial techniques), which risk misaligning the image and its label map, we tune an augmentation engine such that a segmentation network trained on synthetic data has optimal accuracy when applied to real data. This approach allows the training procedure to benefit from real labeled examples, without ever using these real examples to train the segmentation network, which avoids biasing the network towards the properties of the training set. Specifically, we develop both parametric and nonparametric strategies to augment the synthetic images, enhancing the segmentation network's performance. Experimental results on both synthetic and real-world datasets demonstrate the effectiveness of this learning strategy.}
+}
+
 @inproceedings{wang2025schwarz,
   abbr={ICML},
   author={Yu Wang and S. Mazdak Abulnaga and Yael Balbastre and Bruce Fischl},
@@ -43,17 +61,17 @@
 }
 
 @article{tierney2025spm,
-  abbr={arXiv},
+  abbr={JOSS},
   title={SPM 25: open source neuroimaging analysis software},
   author={Tim M. Tierney and Nicholas A. Alexander and Nicole Labra Avila and Yael Balbastre and Gareth Barnes and Yulia Bezsudnova and Mikael Brudfors and Korbinian Eckstein and Guillaume Flandin and Karl Friston and Amirhossein Jafarian and Olivia S. Kowalczyk and Vladimir Litvak and Johan Medrano and Stephanie Mellor and George O'Neill and Thomas Parr and Adeel Razi and Ryan Timms and Peter Zeidman},
-  journal={arXiv},
+  journal={Journal of Open Source Software},
   year={2025},
   eprint={2501.12081},
   arxiv={2501.12081},
   archivePrefix={arXiv},
-  doi={https://doi.org/10.48550/arXiv.2501.12081},
-  url={https://arxiv.org/abs/2501.12081},
-  pdf={https://arxiv.org/pdf/2501.12081.pdf},
+  doi={https://doi.org/10.21105/joss.08103},
+  url={https://joss.theoj.org/papers/10.21105/joss.08103},
+  pdf={https://www.theoj.org/joss-papers/joss.08103/10.21105.joss.08103.pdf},
   code={https://github.com/spm/spm},
   abstract={Statistical Parametric Mapping (SPM) is an integrated set of methods for testing hypotheses about the brain's structure and function, using data from imaging devices. These methods are implemented in an open source software package, SPM, which has been in continuous development for more than 30 years by an international community of developers. This paper reports the release of SPM 25.01, a major new version of the software that incorporates novel analysis methods, optimisations of existing methods, as well as improved practices for open science and software development.}
 }
@@ -70,24 +88,6 @@
   url={https://doi.org/10.1038/s41551-024-01320-},
   pdf={https://www.nature.com/articles/s41551-024-01320-5.pdf},
   abstract={Training a model on fetal and paediatric magnetic resonance images with synthesized artefacts enhances the model’s generalization across downstream tasks and patient populations.}
-}
-
-@article{hu2024learn2synth,
-  abbr={arXiv},
-  title={Learn2Synth: Learning Optimal Data Synthesis Using Hypergradients}, 
-  author={Xiaoling Hu and Oula Puonti and Juan Eugenio Iglesias and Bruce Fischl and Yael Balbastre},
-  author_annot = {;;;‡;‡},
-  journal={arXiv},
-  year={2024},
-  eprint={2411.16719},
-  arxiv={2411.16719},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV},
-  doi={https://doi.org/10.48550/arXiv.2411.16719},
-  url={https://arxiv.org/abs/2411.16719},
-  pdf={https://arxiv.org/pdf/2411.16719.pdf},
-  code={https://github.com/HuXiaoling/Learn2Synth},
-  abstract={Domain randomization through synthesis is a powerful strategy to train networks that are unbiased with respect to the domain of the input images. Randomization allows networks to see a virtually infinite range of intensities and artifacts during training, thereby minimizing overfitting to appearance and maximizing generalization to unseen data. While powerful, this approach relies on the accurate tuning of a large set of hyper-parameters governing the probabilistic distribution of the synthesized images. Instead of manually tuning these parameters, we introduce Learn2Synth, a novel procedure in which synthesis parameters are learned using a small set of real labeled data. Unlike methods that impose constraints to align synthetic data with real data (e.g., contrastive or adversarial techniques), which risk misaligning the image and its label map, we tune an augmentation engine such that a segmentation network trained on synthetic data has optimal accuracy when applied to real data. This approach allows the training procedure to benefit from real labeled examples, without ever using these real examples to train the segmentation network, which avoids biasing the network towards the properties of the training set. Specifically, we develop both parametric and nonparametric strategies to augment the synthetic images, enhancing the segmentation network's performance. Experimental results on both synthetic and real-world datasets demonstrate the effectiveness of this learning strategy.}
 }
 
 @article{gopinath2024synthetic,
