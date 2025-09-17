@@ -1,6 +1,25 @@
 ---
 ---
 
+@article{raynaud2025isme,
+  abbr={MRM},
+  title={ISME—incoherent sampling of multi-echo data to minimize cardiac-induced noise in $R_2^\ast$ brain maps of and magnetic susceptibility},
+  author={Quentin Raynaud and Rita Oliveira and Nadège Corbin and Yaël Balbastre and Ruud B. van Heeswijk and Antoine Lutti},
+  journal={Magnetic Resonance in Medicine},
+  year={2025},
+  doi={10.1002/mrm.70087},
+  biorxiv={10.1101/2025.02.05.636576},
+  url={https://onlinelibrary.wiley.com/doi/10.1002/mrm.70087},
+  pdf={https://www.biorxiv.org/content/10.1101/2025.02.05.636576v1.full.pdf},
+  code={https://zenodo.org/records/14808609},
+  abstract = {
+    Purpose: Brain maps of the MRI parameters R2* and magnetic susceptibility (χ) enable the investigation of microscopic tissue changes associated with brain disease in patient populations. However, maps of R2* and χ are computed from gradient-echo data acquired at multiple echo times and are affected by cardiac-induced physiological noise. In this study, we introduce ISME – a sampling strategy that minimizes the level of cardiac-induced noise in brain maps of R2* and χ.\\
+    Methods: Cardiac-induced noise causes exponential-like effects on the decay of the signal magnitude that vary across the cardiac cycle, increasing the variability of R2* and χ estimates. ISME uses phase-encoding gradients to shift the k-space frequency of the acquired data between consecutive readouts of a multi-echo train. As a result, the multi-echo data at a given k-space index is acquired at different phases of the cardiac cycle. We compare the variability of R2* and χ maps acquired with ISME and with standard multi-echo trajectories in N=10 healthy volunteers. We also investigate the effect of both sampling strategies on the spatial aliasing of pulsating MR signals in R2* and χ maps and propose a weighted-least square (NWLS) approach for the estimation of R2* that accounts for the increase in cardiac-induced noise with echo time.\\
+    Results: Compared to standard multi-echo trajectories, ISME reduces the variability of R2* and χ across repetitions by 25/26/21% and 24/32/23% in the cerebellum/brainstem/whole brain, respectively. With ISME, the spatial aliasing of pulsating MR signals is incoherent between raw echo images, leading to visually sharper R2* maps. The proposed NWLS approach for the estimation of R2* removes the dependence of the fitting residuals on echo time and brings an additional 3/2/1% reduction of the R2* variability in the cerebellum/brainstem/whole brain.\\
+    Conclusion: ISME allows the mitigation of cardiac-induced noise in brain maps of R2* and χ, improving reproducibility.
+  }
+}
+
 @inproceedings{bintsi2025fully,
   abbr={CDMRI @ MICCAI},
   author={Kyriaki-Margarita Bintsi and Ya\"el Balbastre and Jingjing Wu and Julia F. Lehman and Suzanne N. Haber and Anastasia Yendiki},
