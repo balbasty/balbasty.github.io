@@ -11,11 +11,29 @@
   publisher = {Cold Spring Harbor Laboratory},
   abstract = {We present an isotropic 7.72 {\textmu}m/voxel post-mortem human brain dataset acquired using Hierarchical Phase-Contrast Tomography (HiP-CT) at the ESRF Extremely Brilliant Source, beamline BM18. This fills a critical gap between whole-brain MRI at 100 {\textmu}m resolution and serial-section histological reconstructions at 20 {\textmu}m or finer. HiP-CT contrast, derived from X-ray phase shifts, enables rich 3D visualisation of complex neuroanatomy including white-matter bundles, microvasculature, and sub-nuclei. We provide open-source workflows for online data exploration, subvolume download, segmentation, and reintegration of analyses into the full dataset. We demonstrate the potential of this resource by tracing vasculature over long distances, segmenting nuclei, and extracting whitematter orientations with 3D structure-tensor analysis. High-resolution human brain datasets are transformative for quantitative neuroanatomy, circuit mapping, and validation of clinical imaging; this openly available resource is a critical step for global access to next-generation multiscale brain imaging.Competing Interest StatementThe authors have declared no competing interest.European Synchrotron Radiation Facility, https://ror.org/02550n020, MD-1290, MD-1389Agence Nationale de la Recherche, https://ror.org/00rbzpz17, 11-INBS-0006Royal Academy of Engineering, CiET1819/10Chan Zuckerberg Initiative (United States), https://ror.org/02qenvm24, 2020-225394, CZIF2021-006424National Institute of Neurological Disorders and Stroke, https://ror.org/01s5ya894, UM1NS132358Canadian Institute for Advanced Research, https://ror.org/01sdtdd95, CIFAR MacMillan Multiscale Human},
   url = {https://www.biorxiv.org/content/early/2026/02/02/2026.01.27.702076},
+  html = {https://www.biorxiv.org/content/early/2026/02/02/2026.01.27.702076.full},
   eprint = {https://www.biorxiv.org/content/early/2026/02/02/2026.01.27.702076.full.pdf},
   pdf = {https://www.biorxiv.org/content/early/2026/02/02/2026.01.27.702076.full.pdf},
   code = {https://github.com/UCL-MXI-Bio/2025-chourrout-extremely-brilliant-brain},
   data = {https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1939},
 	journal = {bioRxiv}
+}
+
+@article{lopez2026distorting,
+  abbr={Imag.Neusoci.},
+  title={Distorting anatomy to test MEG models and metrics},
+  author={Jose David Lopez and Yael Balbastre and John Ashburner and James Bonaiuto and Gareth Barnes},
+  journal={Imaging Neuroscience},
+  year={2025},
+  doi={10.1162/IMAG.a.1189},
+  biorxiv={10.1101/2025.04.03.646622},
+  url={https://doi.org/10.1162/IMAG.a.1189},
+  html={https://doi.org/10.1162/IMAG.a.1189},
+  pdf={https://direct.mit.edu/imag/article-pdf/doi/10.1162/IMAG.a.1189/2587228/imag.a.1189.pdf},
+  biorxiv={https://www.biorxiv.org/content/10.1101/2025.04.03.646622v1},
+  code={https://github.com/barnesgr123/spm_distort},
+  data={https://figshare.com/s/e3ff829753a76bcfda22},
+  abstract={The magnetoencephalographic and electroencephalographic (M/EEG) source reconstruction problem is an ill-posed model inversion, so it must be constrained by imposing biologically and physically plausible assumptions. Different M/EEG source reconstruction methods entail different assumptions about the underlying current distribution, yet all produce subjectively plausible current estimates. This work aims to develop an objective method that can be used to test any M/EEG analysis pathway. We make use of advances in diffeomorphic brain shape modeling to construct a set of parametrically deformable cortical surfaces that are representative of the population. These deformed (surrogate) brains provide a quantifiable parametric distortion from the ground-truth anatomy. If the current flow giving rise to the MEG data were generated on the true cortical manifold, MEG current estimates should be selective of the true anatomy. We show in simulation and with empirical data how the correct reconstruction assumptions depend closely on the true anatomy. We present a method to quantify the performance of MEG source reconstruction algorithms (and metrics of fit) in terms of millimeters of distortion.}
 }
 
 @article {puonti2025fast,
@@ -28,6 +46,7 @@
   publisher = {Cold Spring Harbor Laboratory},
   abstract = {Structural brain analysis at the subregion level offers critical insights into healthy aging and neurodegenerative diseases. The NextBrain histological atlas was recently introduced to support such fine-grained investigations, but its existing Bayesian segmentation framework remains computationally prohibitive, particularly for large-scale studies. We present a new, open-source tool that dramatically accelerates segmentation using a hybrid approach combining: machine learning, contrast-adaptive segmentation; target-specific image synthesis; and fast diffeomorphic registration (all three with GPU support). Our method enables highly granular segmentation of brain MRI scans of any resolution and contrast (in vivo or ex vivo) at a fraction of the computational cost of the original method (\&lt;5 minutes on a GPU). We validate our tool on four different modalities (in vivo MRI, ex vivo MRI, HiP-CT, and photography) across a total of approximately 4,000 brain scans. Our results demonstrate that the accelerated approach achieves comparable accuracy to the original method in terms of Dice scores, while reducing runtime by over an order of magnitude. This work enables high-resolution anatomical analysis at unprecedented scale and flexibility, providing a practical solution for large neuroimaging studies. Our tool is publicly available in FreeSurfer (https://surfer.nmr.mgh.harvard.edu/fswiki/HistoAtlasSegmentation).Competing Interest StatementThe authors have declared no competing interest.National Institutes of Health, https://ror.org/01cwqze88, 1RF1MH123195, 1R01AG070988, 1UM1MH130981, 1RF1AG080371, 1R21NS138995European Research Council, https://ror.org/0472cxd90, 677697Alzheimer{\textquoteright}s Society, AS-JF-19a-004- 517AlzheimerM-BM-^Rs Research UK, ARUK-PPG2023B-013Lundbeck Foundation, https://ror.org/03hz8wd80, R360M-BM-^V2021M-BM-^V39Italian National Institute of HealthWellcome Trust, https://ror.org/029chgv08, 213722/Z/18/ZNational Institute for Health and Care Research University College London Hospitals Biomedical Research Centre},
   url = {https://www.biorxiv.org/content/early/2025/09/25/2025.09.22.673638},
+  html = {https://www.biorxiv.org/content/10.1101/2025.09.22.673638v1.full},
   eprint = {https://www.biorxiv.org/content/early/2025/09/25/2025.09.22.673638.full.pdf},
   pdf = {https://www.biorxiv.org/content/early/2025/09/25/2025.09.22.673638.full.pdf},
   journal = {bioRxiv},
@@ -43,6 +62,7 @@
   doi={10.48550/arXiv.2510.09098},
   arxiv={2510.09098},
   url={https://arxiv.org/abs/2510.09098},
+  html={https://arxiv.org/abs/2510.09098},
   pdf={https://arxiv.org/pdf/2510.09098},
   code={https://github.com/fil-physics/gadgetron-matlab},
   data={https://zenodo.org/records/13737462},
@@ -60,6 +80,7 @@
   doi={10.1002/mrm.70087},
   biorxiv={10.1101/2025.02.05.636576},
   url={https://onlinelibrary.wiley.com/doi/10.1002/mrm.70087},
+  html={https://onlinelibrary.wiley.com/doi/10.1002/mrm.70087},
   pdf={https://www.biorxiv.org/content/10.1101/2025.02.05.636576v1.full.pdf},
   code={https://zenodo.org/records/14808609},
   data={https://zenodo.org/records/14808609},
@@ -84,6 +105,7 @@
   code={https://github.com/lincbrain/fiber-bundle-segmentation},
   doi={10.1007/978-3-032-12837-9_8},  
   url={https://doi.org/10.1007/978-3-032-12837-9_8},
+  html={https://doi.org/10.1007/978-3-032-12837-9_8},
   pdf={https://arxiv.org/pdf/2508.12942}
 }
 
@@ -100,6 +122,7 @@
   primaryClass={cs.CV},
   doi={https://doi.org/10.48550/arXiv.2411.16719},
   url={https://arxiv.org/abs/2411.16719},
+  html={https://arxiv.org/abs/2411.16719},
   pdf={https://arxiv.org/pdf/2411.16719.pdf},
   code={https://github.com/HuXiaoling/Learn2Synth},
   abstract={Domain randomization through synthesis is a powerful strategy to train networks that are unbiased with respect to the domain of the input images. Randomization allows networks to see a virtually infinite range of intensities and artifacts during training, thereby minimizing overfitting to appearance and maximizing generalization to unseen data. While powerful, this approach relies on the accurate tuning of a large set of hyper-parameters governing the probabilistic distribution of the synthesized images. Instead of manually tuning these parameters, we introduce Learn2Synth, a novel procedure in which synthesis parameters are learned using a small set of real labeled data. Unlike methods that impose constraints to align synthetic data with real data (e.g., contrastive or adversarial techniques), which risk misaligning the image and its label map, we tune an augmentation engine such that a segmentation network trained on synthetic data has optimal accuracy when applied to real data. This approach allows the training procedure to benefit from real labeled examples, without ever using these real examples to train the segmentation network, which avoids biasing the network towards the properties of the training set. Specifically, we develop both parametric and nonparametric strategies to augment the synthetic images, enhancing the segmentation network's performance. Experimental results on both synthetic and real-world datasets demonstrate the effectiveness of this learning strategy.}
@@ -113,24 +136,10 @@
   year={2025},
   abstract={Sparse linear solvers are fundamental to science and engineering, applied in partial differential equations (PDEs), scientific computing, computer vision, and beyond. Indirect solvers possess characteristics that make them undesirable as stable differentiable modules; existing direct solvers, though reliable, are too expensive to be adopted in neural architectures. We substantially accelerate direct sparse solvers or generalized deconvolution by up to 3 orders-of-magnitude faster, violating common assumptions that direct solvers are too slow. We 
   condense'' a sparse Laplacian matrix into a dense tensor, a compact data structure that batch-wise stores the Dirichlet-to-Neumann matrices, reducing the sparse solving to recursively merging pairs of dense matrices that are much smaller. The batched small dense systems are sliced and inverted in parallel to take advantage of dense GPU BLAS kernels, highly optimized in the era of deep learning. Our method is efficient, qualified as a strong zero-shot baseline for AI-based PDE solving and a reliable differentiable module integrable into machine learning pipelines.},
-  url={https://openreview.net/pdf?id=RKbanvzycr},
-  pdf={https://openreview.net/pdf?id=RKbanvzycr},
+  url={https://proceedings.mlr.press/v267/wang25a.html},
+  html={https://proceedings.mlr.press/v267/wang25a.html},
+  pdf={https://raw.githubusercontent.com/mlresearch/v267/main/assets/wang25a/wang25a.pdf},
   code={https://github.com/wangyu9/Schwarz_Schur_Involution}
-}
-
-@article{lopez2025distorting,
-  abbr={bioRxiv},
-  title={Distorting anatomy to test MEG models and metrics},
-  author={Jose David Lopez and Yael Balbastre and John Ashburner and James Bonaiuto and Gareth Barnes},
-  journal={bioRxiv},
-  year={2025},
-  doi={10.1101/2025.04.03.646622},
-  biorxiv={10.1101/2025.04.03.646622},
-  url={https://www.biorxiv.org/content/10.1101/2025.04.03.646622v1},
-  pdf={https://www.biorxiv.org/content/10.1101/2025.04.03.646622v1.full.pdf},
-  code={https://github.com/barnesgr123/spm_distort},
-  data={https://figshare.com/s/e3ff829753a76bcfda22},
-  abstract = {Current flow that gives rise to non-invasive Magnetoencephalographic (MEG) data derives predominantly from pyramidal neurons oriented orthogonal to the cortical surface. The estimate of current flow based on extra-cranial magnetic fields is a well-known ill-posed problem; however, this current distribution must depend on anatomy. In other words, a veridical estimate of current flow should discriminate between true and distorted versions of the brain. Here, we make use of advances in diffeomorphic brain shape modelling to construct a set of parametrically deformable cortical surfaces. We use a latent space of 100 components to construct cortical surfaces that are representative of the population. We show how these geometric distortions can be used to quantify the performance of MEG source reconstruction algorithms and metrics of fit.Competing Interest StatementThe authors have declared no competing interest.}
 }
 
 @article{tierney2025spm,
@@ -144,6 +153,7 @@
   archivePrefix={arXiv},
   doi={https://doi.org/10.21105/joss.08103},
   url={https://joss.theoj.org/papers/10.21105/joss.08103},
+  html={https://joss.theoj.org/papers/10.21105/joss.08103},
   pdf={https://www.theoj.org/joss-papers/joss.08103/10.21105.joss.08103.pdf},
   code={https://github.com/spm/spm},
   abstract={Statistical Parametric Mapping (SPM) is an integrated set of methods for testing hypotheses about the brain's structure and function, using data from imaging devices. These methods are implemented in an open source software package, SPM, which has been in continuous development for more than 30 years by an international community of developers. This paper reports the release of SPM 25.01, a major new version of the software that incorporates novel analysis methods, optimisations of existing methods, as well as improved practices for open science and software development.}
@@ -159,11 +169,11 @@
   year={2025},
   publisher={Nature Publishing Group UK London},
   doi={https://doi.org/10.1038/s41551-024-01320-5},
-  url={https://doi.org/10.1038/s41551-024-01320-},
+  url={https://doi.org/10.1038/s41551-024-01320-5},
+  html={https://doi.org/10.1038/s41551-024-01320-5},
   pdf={https://www.nature.com/articles/s41551-024-01320-5.pdf},
   abstract={Training a model on fetal and paediatric magnetic resonance images with synthesized artefacts enhances the model’s generalization across downstream tasks and patient populations.}
 }
-
 
 @article{casamitjana2025next,
   abbr = {Nature},
@@ -179,6 +189,7 @@
   publisher = {Springer Nature},
   abstract = {Magnetic resonance imaging (MRI) is the standard tool to image the human brain in vivo. In this domain, digital brain atlases are essential for subject-specific segmentation of anatomical regions of interest (ROIs) and spatial comparison of neuroanatomy from different subjects in a common coordinate frame. High-resolution, digital atlases derived from histology (e.g., Allen atlas [3], BigBrain [4], Julich [5]), are currently the state of the art and provide exquisite 3D cytoarchitectural maps, but lack probabilistic labels throughout the whole brain. Here we present NextBrain, a next-generation probabilistic atlas of human brain anatomy built from serial 3D histology and corresponding highly granular delineations of five whole brain hemispheres. We developed AI techniques to align and reconstruct ~{}10,000 histological sections into coherent 3D volumes, as well as to semi-automatically trace the boundaries of 333 distinct anatomical ROIs on all these sections. Comprehensive delineation on multiple cases enabled us to build an atlas with probabilistic labels throughout the whole brain. Further, we created a companion Bayesian tool for automated segmentation of the 333 ROIs in any in vivo or ex vivo brain MRI scan using the NextBrain atlas. We showcase two applications of the atlas: automated segmentation of ultra-high-resolution ex vivo MRI and volumetric analysis of brain ageing based on ~{}4,000 publicly available in vivo MRI scans. We publicly release the raw and aligned data (including an online visualisation tool), probabilistic atlas, and segmentation tool. By enabling researchers worldwide to analyse brain MRI scans at a superior level of granularity without manual effort or highly specific neuroanatomical knowledge, NextBrain will accelerate our quest to understand the human brain in health and disease.Competing Interest StatementThe authors have declared no competing interest.},
   url = {https://www.nature.com/articles/s41586-025-09708-2},
+  html = {https://www.nature.com/articles/s41586-025-09708-2},
   eprint = {https://www.nature.com/articles/s41586-025-09708-2.pdf},
   pdf = {https://www.nature.com/articles/s41586-025-09708-2.pdf},
   biorxiv = {10.1101/2024.02.05.579016},
