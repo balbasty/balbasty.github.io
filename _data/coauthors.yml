@@ -1,6 +1,6 @@
 "ashburner":
   - firstname: ["John", "J.", "J"]
-    url: https://www.fil.ion.ucl.ac.uk/team/computational-anatomy-team/
+    url: https://profiles.ucl.ac.uk/10283-john-ashburner
 
 "brudfors":
   - firstname: ["Mikael", "M.", "M"]
@@ -8,7 +8,7 @@
     
 "callaghan":
   - firstname: ["Martina", "Martina F.", "M. F.", "M.F.", "M.", "MF", "M F", "M"]
-    url: https://www.fil.ion.ucl.ac.uk/team/physics-team/
+    url: https://profiles.ucl.ac.uk/36016-martina-callaghan
     
 "dalca":
   - firstname: ["Adrian", "Adrian D.", "Adrian D", "A", "A D", "AD", "A.", "A. D.", "A.D."]
@@ -20,19 +20,23 @@
     
 "fischl":
   - firstname: ["Bruce", "B.", "B"]
-    url: https://www.martinos.org/investigator/bruce-fischl/
+    url: https://www.martinos.org/faculty/fischl-bruce/
 
 "iglesias":
   - firstname: ["Juan", "Juan Eugenio", "Eugenio", "J. Eugenio", "Juan E.", "Juan E", "J Eugenio", "J. E.", "J.", "J", "J E", "JE"]
-    url: https://lemon.martinos.org/
+    url: https://www.martinos.org/faculty/juan-eugenio-iglesias/
     
 "iglesias-gonzalez":
   - firstname: ["Juan", "Juan Eugenio", "Eugenio", "J. Eugenio", "Juan E.", "Juan E", "J Eugenio", "J. E.", "J.", "J", "J E", "JE"]
-    url: https://lemon.martinos.org/
+    url: https://www.martinos.org/faculty/juan-eugenio-iglesias/
     
 "mangin":
   - firstname: ["Jean-Francois", "Jean-François", "J.-F.", "J.", "J. F.", "J", "J-F", "JF", "J F"]
-    url: https://joliot.cea.fr/drf/joliot/en/Pages/research_entities/NeuroSpin/unati.aspx
+    url: https://baobab.neurospin.fr
+
+"yendiki":
+  - firstname: ["Anastasia", "A.", "A"]
+    url: https://www.martinos.org/faculty/yendiki-anastasia-2/
 
 "young":
   - firstname: ["Sean", "Sean I.", "S.", "S. I.", "Sean I", "S", "SI", "S I"]
